@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: #524c6b;
+        }
+        
+        .header-p {
+            color: lightcoral;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold; 
+            margin: 0; 
+        }
+
+        .date_tbl {
+            background-color: lightcoral;
+            width: 100%;
+            border-collapse: collapse; 
+
+        }
+
+        .date_tbl th, .date_tbl td {
+            border: 3px solid #524c6b; 
+            padding: 20px; 
+            text-align: center; 
+        }
+
+        .no_sched{
+
+            background-color: #524c6b;
+        }
+
+        .with_sched{
+            text-align: center;
+            background-color: #911271;
+            color:white ;
+        }
+
+        #footer{
+
+            font-size: 23px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="header">
+        <p class="header-p">Class Schedule</p>
+        <p class="header-p" style="font-size: 1.5em; font-style: italic;">First Semester AY 2024-2025</p>
+    </section>
+
+    <section id="table">
+        <table class="date_tbl">
+            <tr>
+                <th colspan="2">Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+
+                <tr>
+                    <th class = "timetbl" colspan="2" >7:00Am-8:00Am</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "with_sched">MATH 408 <br>102</br> </td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "with_sched">MATH 408 <br>102</br> </td>
+
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">8:00Am-9:00Am</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">9:00Am-10:00Am</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "with_sched" rowspan ="3">IT 311 <br>LAB 2</br></td>
+                    <td class = "with_sched">IT 321<br>102</br></td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "with_sched">IT 321<br>102</br></td>
+                </tr>
+                
+                <tr>
+                    <th class = "timetbl" colspan="2">10:00Am-11:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "with_sched" rowspan="2">IT 331<br>102</br></td>\
+                    <td class = "with_sched" rowspan ="2">CS 312 <br>SMART</br></td>
+                    <td class = "with_sched" rowspan ="3">IT 314 <br>LAB 3</br></td>
+                    
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">11:00Am-12:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">12:00Pm-1:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">1:00Pm-2:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "with_sched">CS 311<br>102</br></td>
+                    <td class = "with_sched" rowspan ="3">CS 312 <br>SMART</br></td>
+                    <td class = "no_sched">&nbsp;</td>
+
+                    
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">2:00Pm-3:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class= "with_sched"rowspan= "2" >IT 314 <br>101</br></td>
+                    <td class = "with_sched">Ged 104<br>102</br></td>
+                    <td class = "with_sched" rowspan="2">CS 311<br>102</br></td>
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">3:00Pm-4:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">4:00Pm-5:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "with_sched">Ged 104<br>102</br></td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <th class = "timetbl" colspan="2">5:00Pm-6:00Pm</th>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                    <td class = "no_sched">&nbsp;</td>
+                </tr>      
+
+            </tr>
+        </table>
+    </section>
+
+    <section id="footer">
+        <h3>Class Code and Description</h3>
+        <ul>
+            <li>IT 331 - Application Development and Emerging Technologies</li>
+            <li>IT 321 - Human-Computer Interaction</li>
+            <li>CS 311 - Automata Theory and Foraml Languages </li>
+            <li>CS 312 - Mobile Computing</li>
+            <li>IT 314 - Web System and Technologies</li>
+            <li>GeD 104  - The contemporary World</li>
+            <li>MATH 408 - Data Analysis</li>
+        </ul>
+
+
+        
+    </section>
+</body>
+</html>
