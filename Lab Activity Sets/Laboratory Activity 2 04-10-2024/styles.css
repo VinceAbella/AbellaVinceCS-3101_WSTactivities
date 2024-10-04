@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("assets/background_gengar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.vision-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vision-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left; 
+}
+
+.vision-item img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+}
+
+.vision-item h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #6E5574;
+    color: white;
+}
+
+.vision-item p {
+    padding: 10px;
+    color: #26092A;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+}
+
+.mySlides {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.mySlides.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    33% { opacity: 1; }
+    38% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.mySlides {
+    animation: fade 9s infinite;
+}
+
+.mySlides:nth-child(1) {
+    animation-delay: 0s;
+}
+.mySlides:nth-child(2) {
+    animation-delay: 3s;
+}
+.mySlides:nth-child(3) {
+    animation-delay: 6s;
+}

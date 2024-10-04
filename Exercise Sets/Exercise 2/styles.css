@@ -13,6 +13,7 @@ body {
     flex-wrap: wrap; 
     gap: 20px;
     padding: 20px;
+    justify-content: space-around;
 }
 
 .flex-box {
@@ -40,8 +41,9 @@ body {
 
 
 @media (min-width: 768px) {
+
     .flex-box {
-        width: 45%; 
+        width: 45%;
     }
 }
 
