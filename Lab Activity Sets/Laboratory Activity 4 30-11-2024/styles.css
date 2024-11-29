@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.flex-box {
+    background-color: #7D78A3;
+    border: 1px solid #A29CBB;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 300px; 
+    box-sizing: border-box;
+}
+
+.flex-box h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.flex-box p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Flexbox container */
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: lightgray; /* Background color */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hidden content */
+.flexbox .content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+}
+
+/* Show content on hover */
+.flexbox:hover .content {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+
+    .flex-box {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .flex-box {
+        width: 30%; 
+    }
+}
